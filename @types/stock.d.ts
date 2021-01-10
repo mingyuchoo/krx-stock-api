@@ -1,0 +1,37 @@
+import dailyInformation from "./dailyInformation";
+import InstitutionalInvestorOffer from "./institutionalInvestorOffer";
+import stockRowData from "./interface/stockRowData";
+import Market from "./market";
+import Offer from "./offer";
+import Transaction from "./transaction";
+export default class Stock {
+    queryTime: string;
+    name: string;
+    price: number;
+    change: number;
+    previousPrice: number;
+    volume: number;
+    tradingVolume: number;
+    start: number;
+    high: number;
+    low: number;
+    high52: number;
+    low52: number;
+    up: number;
+    down: number;
+    per: number;
+    amount: number;
+    faceValue: number;
+    daily: Array<dailyInformation>;
+    institutionalInvestorAsk: Array<InstitutionalInvestorOffer>;
+    institutionalInvestorBid: Array<InstitutionalInvestorOffer>;
+    ask: Array<Offer>;
+    bid: Array<Offer>;
+    transactions: Array<Transaction>;
+    kospi: Market;
+    kosdaq: Market;
+    marketOpen: boolean;
+    krx100: Market;
+    kospi200: Market;
+    constructor(data: stockRowData | any);
+}

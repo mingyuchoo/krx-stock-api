@@ -1,8 +1,6 @@
 declare const _default: {
-    /**
-     * @param {string} code
-     * @return {Promise<Object>}
-     */
     getData(code: string): Promise<any>;
+    getNumber(num: string): number;
+    getChange(dungrak: string, debi: string): number;
 };
 export default _default;

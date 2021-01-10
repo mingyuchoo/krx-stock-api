@@ -1,18 +1,13 @@
-import lib from './lib';
-import Stock from './stock';
+import lib from "./lib";
+import Stock from "./stock";
 
 export default {
-  getStockList() {
-
-  },
+  getStockList() {},
   async getStock(code: string) {
     return new Stock(await lib.getData(code));
   },
   /**
    *
    */
-  getIndex() {
-
-  },
-
-}
+  getIndex() {},
+};

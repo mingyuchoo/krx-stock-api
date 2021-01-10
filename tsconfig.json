@@ -1,12 +1,15 @@
 {
   "compilerOptions": {
+    "target": "esnext",
     "module": "commonjs",
-    "target": "es2018",
+    "lib": ["esnext"],
+    "outDir": "dist",
+    "rootDir": "src",
+    "allowJs": true,
+    "removeComments": true,
     "sourceMap": false,
     "declaration": true,
-    "declarationDir": "types"
+    "declarationDir": "@types"
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules", "tests"]
 }

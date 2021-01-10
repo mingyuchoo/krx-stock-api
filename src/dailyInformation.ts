@@ -1,4 +1,4 @@
-import lib from './lib';
+import lib from "./lib";
 
 export default class DailyInformation {
   date: string;
@@ -11,8 +11,16 @@ export default class DailyInformation {
   amount: number;
 
   constructor({
-                day_Date, day_EndPrice, day_Dungrak, day_getDebi, day_Start, day_High, day_Low, day_Volume, day_getAmount,
-              }) {
+    day_Date,
+    day_EndPrice,
+    day_Dungrak,
+    day_getDebi,
+    day_Start,
+    day_High,
+    day_Low,
+    day_Volume,
+    day_getAmount,
+  }) {
     this.date = day_Date;
     this.price = lib.getNumber(day_EndPrice);
     this.change = lib.getChange(day_Dungrak, day_getDebi);

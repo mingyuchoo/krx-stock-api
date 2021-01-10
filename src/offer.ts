@@ -1,4 +1,4 @@
-import lib from './lib';
+import lib from "./lib";
 
 export default class Offer {
   price: number;
